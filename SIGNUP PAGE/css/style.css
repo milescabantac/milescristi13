@@ -1,0 +1,329 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFE1E1;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#signup-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#logo-container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff739d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff0077;
+}
+
+#signup-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.password-container {
+    position: relative;
+}
+
+#togglePassword,
+#toggleConfirmPassword {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#passwordError {
+    color: #ff0000;
+    margin-top: 5px;
+}
+
+/* styles.css */
+
+body {
+    font-family: Georgia, serif;
+    background-image: url('D:/SIGNUP PAGE/assets/logo1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#signup-container {
+    background-color: #f8f7fd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#logo-container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #181ceb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1090f8;
+}
+
+#signup-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.password-container {
+    position: relative;
+}
+
+#togglePassword,
+#toggleConfirmPassword {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#passwordError {
+    color: #ff0000;
+    margin-top: 5px;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-image: url('D:/SIGNUP PAGE/assets/logo1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: column; /* Adjusted for responsiveness */
+    align-items: center;
+    padding: 10px;
+}
+
+#signup-container {
+    background-color: #f8f7fd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#logo-container img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    padding-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 20px); /* Adjusted for padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #181ceb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1090f8;
+}
+
+#signup-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.password-container {
+    position: relative;
+}
+
+#togglePassword,
+#toggleConfirmPassword {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#passwordError {
+    color: #ff0000;
+    margin-top: 5px;
+}
+body {
+    font-family: Georgia, serif;
+    background-image: url('D:/SIGNUP PAGE/assets/logo1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: column; /* Adjusted for responsiveness */
+    align-items: center;
+    padding: 10px;
+}
+
+#signup-container {
+    background-color: #f8f7fd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#logo-container img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    padding-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 20px); /* Adjusted for padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #181ceb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1090f8;
+}
+
+#signup-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.password-container {
+    position: relative;
+}
+
+#togglePassword,
+#toggleConfirmPassword {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#passwordError {
+    color: #ff0000;
+    margin-top: 5px;
+}

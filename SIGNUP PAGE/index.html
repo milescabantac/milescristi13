@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memayles Sign Up Page</title>
+    <link href="D:/SIGNUP PAGE/assets/icon.png" rel="icon">
+    <link rel="stylesheet" href="D:/SIGNUP PAGE/style.css">
+    <link rel="stylesheet" href="signup-styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="signup-container">
+        <form action="your_server_side_registration_endpoint" method="post">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required placeholder="Firstname">
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required placeholder="Lastname">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Email">
+
+            <label for="password">Password:</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" required placeholder="Password">
+                <i class="far fa-eye" id="togglePassword" onclick="togglePassword()"></i>
+            </div>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <div class="password-container">
+                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm Password">
+                <i class="far fa-eye" id="toggleConfirmPassword" onclick="toggleConfirmPassword()"></i>
+            </div>
+            <p id="passwordError"></p>
+
+            <button type="button" onclick="validateAndSubmit()">Sign Up</button>
+        </form>
+    </div>
+
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("password");
+            var showPasswordIcon = document.getElementById("togglePassword");
+            
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                showPasswordIcon.classList.remove("far");
+                showPasswordIcon.classList.add("fas");
+            } else {
+                passwordField.type = "password";
+                showPasswordIcon.classList.remove("fas");
+                showPasswordIcon.classList.add("far");
+            }
+        }
+
+        function toggleConfirmPassword() {
+            var confirmPasswordField = document.getElementById("confirmPassword");
+            var showConfirmPasswordIcon = document.getElementById("toggleConfirmPassword");
+            
+            if (confirmPasswordField.type === "password") {
+                confirmPasswordField.type = "text";
+                showConfirmPasswordIcon.classList.remove("far");
+                showConfirmPasswordIcon.classList.add("fas");
+            } else {
+                confirmPasswordField.type = "password";
+                showConfirmPasswordIcon.classList.remove("fas");
+                showConfirmPasswordIcon.classList.add("far");
+            }
+        }
+
+        function checkPasswordMatch() {
+            var passwordInput = document.getElementById("password");
+            var confirmPasswordInput = document.getElementById("confirmPassword");
+            var passwordError = document.getElementById("passwordError");
+
+            if (passwordInput.value !== confirmPasswordInput.value) {
+                passwordError.textContent = "Passwords do not match";
+                return false;
+            } else {
+                passwordError.textContent = "";
+                return true;
+            }
+        }
+
+        function validateAndSubmit() {
+            if (checkPasswordMatch()) {
+                // Submit the form or perform other actions
+                alert("Sign Up Successful!"); // Replace with your actual form submission code
+            } else {
+                // Passwords don't match, do not submit the form
+                alert("Passwords do not match. Please check and try again.");
+            }
+        }
+
+        var firstnameInput = document.getElementById("firstname");
+        var lastnameInput = document.getElementById("lastname");
+        var emailInput = document.getElementById("email");
+        var passwordInput = document.getElementById("password");
+        var confirmPasswordInput = document.getElementById("confirmPassword");
+
+        function handlePlaceholder(inputElement, defaultPlaceholder) {
+            inputElement.onfocus = function () {
+                this.placeholder = '';
+            };
+
+            inputElement.onblur = function () {
+                if (this.value === '') {
+                    this.placeholder = defaultPlaceholder;
+                }
+            };
+
+            inputElement.oninput = function () {
+                if (this.value === '') {
+                    this.placeholder = defaultPlaceholder;
+                } else {
+                    this.placeholder = '';
+                }
+            };
+        }
+
+        handlePlaceholder(firstnameInput, 'Enter your first name');
+        handlePlaceholder(lastnameInput, 'Enter your last name');
+        handlePlaceholder(emailInput, 'Enter your email');
+        handlePlaceholder(passwordInput, 'Create a password');
+        handlePlaceholder(confirmPasswordInput, 'Confirm your password');
+
+        confirmPasswordInput.addEventListener("input", checkPasswordMatch);
+    </script>
+</body>
+</html>
